@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f1ee;
+  color: #333;
+}
+
+header {
+  background-color: #4b3229;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+nav.nav {
+  background-color: #4b3229;
+  padding: 10px 0;
+  text-align: right;
+  font-weight: bold;
+}
+
+nav.nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav.nav a:hover {
+  color: orange;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  position: relative;
+  user-select: none;
+}
+
+.slider-full {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 40px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slider-wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slider-item {
+  text-align: center;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.slider-track img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 2px solid #4b3229;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  text-align: center;
+  font-weight: 600;
+  color: #4b3229;
+  font-size: 15px;
+  margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(75, 50, 41, 0.8);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: rgba(75, 50, 41, 1);
+}
+
+.arrow-left {
+  left: 30px;
+}
+
+.arrow-right {
+  right: 30px;
+}
+
+.info-text {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #3b2a26;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+.info-text .headline {
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #4b3229;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1150px) {
+  .slider-wrapper {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}

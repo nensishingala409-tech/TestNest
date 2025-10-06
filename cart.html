@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart - FoodOrder</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="link">Home</a>
+    <a href="order.html" class="link">Menu</a>
+    <a href="aboutus.html" class="link">Contact</a>
+  </nav>
+
+  <div class="cart-container">
+    <h1>Your Cart</h1>
+
+    <div id="cartItems">
+    </div>
+
+    <div class="cart-total">
+      <h2 id="totalPrice">Total: ₹0</h2>
+      <button class="checkout-btn">
+        <a href="payment.html">Checkout</a>
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 YourWebsite. All rights reserved.</p>
+  </footer>
+
+<script>
+function loadCart() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cartContainer = document.getElementById('cartItems');
+    let total = 0;
+    cartContainer.innerHTML = '';
+
+    cart.forEach((item, index) => {
+        total += item.price;
+
+        let div = document.createElement('div');
+        div.classList.add('cart-item');
+        div.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" width="200" height="100" />
+          <div class="item-details">
+            <h3>${item.name}</h3>
+            <p>Price: ₹${item.price}</p>
+            <button class="remove-btn" data-index="${index}">Remove</button>
+          </div>
+        `;
+        cartContainer.appendChild(div);
+    });
+
+    document.getElementById('totalPrice').textContent = 'Total: ₹' + total;
+
+    document.querySelectorAll('.remove-btn').forEach(button => {
+        button.addEventListener('click', e => {
+            const idx = e.target.getAttribute('data-index');
+            removeItemFromCart(idx);
+        });
+    });
+}
+
+function removeItemFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('cart')) ;
+    cart.splice(index, 1); 
+    localStorage.setItem('cart', JSON.stringify(cart));
+    loadCart(); 
+}
+
+loadCart();
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>home page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Testnest</h1>
+  </header>
+
+  <nav class="nav">
+    <a href="login.html">login</a>
+    <a href="registration.html">registration</a>
+    <a href="order.php">menu</a>
+    <a href="aboutus.html">about us</a>
+    <a href="help.html">help</a>
+  </nav>
+
+  <main>
+    <div class="slider-full">
+      <button class="arrow arrow-left" id="arrowLeft">&#8592;</button>
+      <button class="arrow arrow-right" id="arrowRight">&#8594;</button>
+
+      <div class="slider-wrapper">
+        <div class="slider-track" id="sliderTrack">
+          <div class="slider-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnsmyoAPUYUzNTCnViS8TdV1HmraRgf5MRg&s" alt="Burger" />
+            <div class="caption">Burger</div>
+          </div>
+          <div class="slider-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRikyAPS9nuVj02D5LtA2Hsn4vUHw6ELMDfOBO9uOAcSXpk8dRfTBkVOFBJ_ckGMGxJcYc&usqp=CAU" alt="Pizza" />
+            <div class="caption">Pizza</div>
+          </div>
+          <div class="slider-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IHaPyv1fqyHkIQrZDfzs6dtzehm6PzUTzQ&s" alt="Fries" />
+            <div class="caption">Fries</div>
+          </div>
+          <div class="slider-item">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg" alt="Coffee" />
+            <div class="caption">Coffee</div>
+          </div>
+          <div class="slider-item">
+            <img src="https://hips.hearstapps.com/womansday/assets/cm/15/09/54ef93938bca1_-_neapolitan-brownie-ice-cream-cake-recipe-wdy0314-de.jpg" alt="Cake" />
+            <div class="caption">Cake</div>
+          </div>
+          <div class="slider-item">
+            <img src="https://c.pxhere.com/images/6a/f6/8e0b070ae416a02cac8891dff42f-1582911.jpg!s2" alt="Drinks" />
+            <div class="caption">Drinks</div>
+          </div>
+          <div class="slider-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScy2UCRX3VD8KHO6o7J_X95tTFk8o2P0UXPw&s" alt="Sandwich" />
+            <div class="caption">Sandwich</div>
+          </div>
+          <div class="slider-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBI-xb2VjC8Gcs8PT7iPbJRxydxJ-EoUB4IQ&s" alt="Salad" />
+            <div class="caption">Salad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-text">
+      <p class="headline"><b>Happy with Delicious Food and get new Experiences with Testnest</b></p>
+      <p>Your one-stop destination for delicious fast food and quick bites <br>
+        that satisfy every craving. Fresh ingredients, bold flavors, and <br>
+        heartwarming service—every time!</p>
+      <p>Explore Our Menu:<br>
+        Hungry? Check out our [Menu Page] to explore everything from spicy <br>
+        snacks to full meal combos. We deliver taste right to your plate!</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 YourWebsite. All rights reserved.
+  </footer>
+
+  <script>
+    const track = document.getElementById('sliderTrack');
+    const btnLeft = document.getElementById('arrowLeft');
+    const btnRight = document.getElementById('arrowRight');
+
+    const imageWidth = 180; 
+    const visibleImages = 6;
+    const totalItems = track.children.length;
+    const maxIndex = totalItems - visibleImages;
+
+    let currentIndex = 0;
+
+    btnRight.addEventListener('click', () => {
+      if (currentIndex < maxIndex) {
+        currentIndex++;
+        track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+      }
+    });
+
+    btnLeft.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+      }
+    });
+  </script>
+
+</body>
+</html>

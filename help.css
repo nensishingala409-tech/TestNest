@@ -1,0 +1,94 @@
+button {
+  background-color: rgb(78, 52, 46);
+  font-size: larger;
+  color: white;
+}
+
+input {
+  width: 70vw;
+  height: 30px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: rgb(154, 147, 145);
+}
+
+body {
+  background-color: #dfdbda;
+}
+
+footer {
+  width: 100vw;
+  height: 70px;
+  background-color: #4e342e;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+}
+
+nav, .header {
+  background-color: rgb(78, 52, 46);
+  color: white;
+  border-radius: 6px;
+  text-align: right;
+  text-decoration: none;
+  padding: 15px 20px;
+  gap: 50px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+  height: 30px;
+  margin-right: 15px;
+  position: static;
+  top: 10px;
+  font-size: 17px;
+}
+
+#header {
+  background-color: #4e342e;
+  color: white;
+  font-size: 22px;
+}
+
+
+ol li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  list-style-position: inside;
+  transition: background-color 0.3s ease;
+}
+
+ol li:hover {
+  background-color: #e0d4cf; 
+}
+
+ol li::after {
+  content: " +";
+  float: right;
+  font-weight: bold;
+  color: rgb(78, 52, 46);
+  transition: transform 0.3s ease;
+}
+
+ol li.active::after {
+  content: " -";
+  transform: rotate(180deg);
+}
+
+ol p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  margin: 0;
+  padding: 0 10px;
+  background-color: #f4f1f0;
+  border-left: 3px solid rgb(78, 52, 46);
+  border-radius: 0 0 5px 5px;
+}
+
+ol p.visible {
+  max-height: 500px;
+  padding: 10px;
+}

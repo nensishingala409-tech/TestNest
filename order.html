@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css" />
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="link">home</a>
+        <a href="aboutus.html" class="link">about us</a>
+        <a href="help.html" class="link">help</a>
+    </nav>
+    <br /><br />
+    <center>
+        <input type="text" placeholder="search" id="search" />
+    </center>
+    <div id="menuContainer"></div>
+
+    <table>
+        <tr>
+            <td><h3>pizza</h3></td>
+            <td></td>
+            <td><h3>Burger</h3></td>
+            <td></td>
+            <td><h3>sizzler</h3></td>
+            <td></td>
+            <td><h3>French Fries</h3></td>
+        </tr>
+        <tr>
+            <td><img src="https://cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg" width="200" /></td>
+            <td>
+                <h4>Margherita (Regular) pizza</h4>
+                price:199 <br /><br />
+                <a href="#" class="add-btn" data-name="Margherita (Regular) pizza" data-price="199" data-img="https://cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg">Add</a>
+                <br /><br />
+            </td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ReUYcgEQQ5ds5eKSysf3B-3zHfWk79A7MA&s" width="200" /></td>
+            <td>
+                <h4>Classic Veg Burger</h4>
+                price:99 <br /><br />
+                <a href="#" class="add-btn" data-name="Classic Veg Burger" data-price="99" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ReUYcgEQQ5ds5eKSysf3B-3zHfWk79A7MA&s">Add</a>
+                <br /><br />
+            </td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPFdbKU4GKWEx7E8ibu74Gf5_4hHeyt80YQ&s" width="200" /></td>
+            <td>
+                <h4>crunchy Paneer sizzler</h4>
+                price:299 <br /><br />
+                <a href="#" class="add-btn" data-name="crunchy Paneer sizzler" data-price="299" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPFdbKU4GKWEx7E8ibu74Gf5_4hHeyt80YQ&s">Add</a>
+                <br /><br />
+            </td>
+            <td><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/snack-savourie/x/u/v/fresh-live-potato-finger-chips-i-french-fries-low-fat-chips-i-no-original-imaghqe72vzjp4zb.jpeg?q=90&crop=false" width="200" /></td>
+            <td>
+                <h4>French Fries (Regular)</h4>
+                price:99<br /><br />
+                <a href="#" class="add-btn" data-name="French Fries (Regular)" data-price="99" data-img="https://rukminim2.flixcart.com/image/850/1000/xif0q/snack-savourie/x/u/v/fresh-live-potato-finger-chips-i-french-fries-low-fat-chips-i-no-original-imaghqe72vzjp4zb.jpeg?q=90&crop=false">Add</a>
+                <br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://www.dominos.co.in/great-deals/online-pizza-coupons/images/story_images/evd/pizza-4.jpg" height="130" width="200" /></td>
+            <td>
+                <h4>Farmhouse pizza</h4>
+                price:299 <br /><br />
+                <a href="#" class="add-btn" data-name="Farmhouse pizza" data-price="299" data-img="https://www.dominos.co.in/great-deals/online-pizza-coupons/images/story_images/evd/pizza-4.jpg">Add</a>
+            </td>
+            <td><img src="https://cdn.uengage.io/uploads/6670/image-557382-1677054193.jpeg" height="130" width="200" /></td>
+            <td>
+                <h4>Cheese Burst Burger</h4>
+                price:129 <br /><br />
+                <a href="#" class="add-btn" data-name="Cheese Burst Burger" data-price="129" data-img="https://cdn.uengage.io/uploads/6670/image-557382-1677054193.jpeg">Add</a>
+            </td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPyNzTQWgDCa1ydXl0ctOgjUFKunrDD46GTw&s" height="130" width="200" /></td>
+            <td>
+                <h4>tasty special sizzler</h4>
+                price:399 <br /><br />
+                <a href="#" class="add-btn" data-name="tasty special sizzler" data-price="399" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPyNzTQWgDCa1ydXl0ctOgjUFKunrDD46GTw&s">Add</a>
+            </td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcAAqevped9jP7qd8rEYKxWiX8-PriUAfVT1L2I76nNxB6q5m0lrb0ng9y3dk3q8rTxw&usqp=CAU" height="130" width="200" /></td>
+            <td>
+                <h4>Peri-Peri Fries</h4>
+                price:119 <br /><br />
+                <a href="#" class="add-btn" data-name="Peri-Peri Fries" data-price="119" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcAAqevped9jP7qd8rEYKxWiX8-PriUAfVT1L2I76nNxB6q5m0lrb0ng9y3dk3q8rTxw&usqp=CAU">Add</a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaLabHCgyK_q1WcBUU_vGfEIZnPj_6lJ9-Ig&s" height="130" width="200" /></td>
+            <td>
+                <h4>Veggie Supreme pizza</h4>
+                price:399 <br /><br />
+                <a href="#" class="add-btn" data-name="Veggie Supreme pizza" data-price="399" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaLabHCgyK_q1WcBUU_vGfEIZnPj_6lJ9-Ig&s">Add</a>
+            </td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRclmC0jxLa7DRHXZODCfZUdBEtUH9ZiCeZSg&s" height="130" width="200" /></td>
+            <td>
+                <h4>Paneer Tikka Burger</h4>
+                price:149 <br /><br />
+                <a href="#" class="add-btn" data-name="Paneer Tikka Burger" data-price="149" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRclmC0jxLa7DRHXZODCfZUdBEtUH9ZiCeZSg&s">Add</a>
+            </td>
+            <td><img src="https://b.zmtcdn.com/data/dish_photos/578/d0dc283ce184c577f0d95477e62f4578.jpeg?fit=around|130:130&crop=130:130;*,*" height="130" width="200" /></td>
+            <td>
+                <h4>maxican platter sizzler</h4>
+                price:499 <br /><br />
+                <a href="#" class="add-btn" data-name="maxican platter sizzler" data-price="499" data-img="https://b.zmtcdn.com/data/dish_photos/578/d0dc283ce184c577f0d95477e62f4578.jpeg?fit=around|130:130&crop=130:130;*,*">Add</a>
+            </td>
+            <td><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/nacho_cheese_sauce_55011_16x9.jpg" height="130" width="200" /></td>
+            <td>
+                <h4>Cheesy Nachos</h4>
+                price:499 <br /><br />
+                <a href="#" class="add-btn" data-name="Cheesy Nachos" data-price="499" data-img="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/nacho_cheese_sauce_55011_16x9.jpg">Add</a>
+            </td>
+        </tr>
+    </table>
+    <br /><br />
+    <table>
+        <tr>
+            <td class="td1"><h3>Beverages</h3></td>
+            <td class="td1"></td>
+            <td class="td1"><h3>Coffee</h3></td>
+            <td class="td1"></td>
+            <td class="td1"><h3>dessert</h3></td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <img src="https://muriellebanackissa.com/wp-content/uploads/2022/09/Cherry-Mojito-42-scaled.jpg?ver=1.2.2" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>Mojito</h4>
+                price:199 <br /><br />
+                <a href="#" class="add-btn" data-name="Mojito" data-price="199" data-img="https://muriellebanackissa.com/wp-content/uploads/2022/09/Cherry-Mojito-42-scaled.jpg?ver=1.2.2">Add</a>
+            </td>
+            <td class="td1">
+                <img src="https://khana.behindtalkies.com/wp-content/uploads/sites/13/2023/02/pexels-photo-312418.jpeg" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>coffee</h4>
+                price:299 <br /><br />
+                <a href="#" class="add-btn" data-name="coffee" data-price="299" data-img="https://khana.behindtalkies.com/wp-content/uploads/sites/13/2023/02/pexels-photo-312418.jpeg">Add</a>
+            </td>
+            <td class="td1">
+                <img src="https://britneybreaksbread.com/wp-content/uploads/2023/06/oreo-ice-cream.jpg" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>oreo ice-cream</h4>
+                price:199 <br /><br />
+                <a href="#" class="add-btn" data-name="oreo ice-cream" data-price="199" data-img="https://britneybreaksbread.com/wp-content/uploads/2023/06/oreo-ice-cream.jpg">Add</a>
+            </td>
+            <td class="td1">
+                <img src="https://i.pinimg.com/736x/79/e4/8b/79e48b3a2fa426a9a2b38bc45825f076.jpg" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>oreo cup cake</h4>
+                price:199 <br /><br />
+                <a href="#" class="add-btn" data-name="oreo cup cake" data-price="199" data-img="https://i.pinimg.com/736x/79/e4/8b/79e48b3a2fa426a9a2b38bc45825f076.jpg">Add</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/cold-coffee-recipe-1.jpg" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>Cold Coffee</h4>
+                price:159 <br /><br />
+                <a href="#" class="add-btn" data-name="Cold Coffee" data-price="159" data-img="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/cold-coffee-recipe-1.jpg">Add</a>
+            </td>
+            <td class="td1">
+                <img src="https://corkframes.com/cdn/shop/articles/Corkframes_Coffee_Guide_520x500_422ebe38-4cfa-42b5-a266-b9bfecabaf30.jpg?v=1734598727" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>coffee</h4>
+                price:399 <br /><br />
+                <a href="#" class="add-btn" data-name="coffee" data-price="399" data-img="https://corkframes.com/cdn/shop/articles/Corkframes_Coffee_Guide_520x500_422ebe38-4cfa-42b5-a266-b9bfecabaf30.jpg?v=1734598727">Add</a>
+            </td>
+            <td class="td1">
+                <img src="https://i.pinimg.com/originals/29/b5/98/29b5988314abc1f743a102f3456ee730.jpg" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>chocolate ice-cream</h4>
+                price:399 <br /><br />
+                <a href="#" class="add-btn" data-name="chocolate ice-cream" data-price="399" data-img="https://i.pinimg.com/originals/29/b5/98/29b5988314abc1f743a102f3456ee730.jpg">Add</a>
+            </td>
+            <td class="td1">
+                <img src="https://i.pinimg.com/736x/75/1b/eb/751beb110dbe25c6add72298bd7ab7bd.jpg" width="170" height="200" />
+            </td>
+            <td class="td1">
+                <h4>pinapple pestry</h4>
+                price:149 <br /><br />
+                <a href="#" class="add-btn" data-name="pinapple pestry" data-price="149" data-img="https://i.pinimg.com/736x/75/1b/eb/751beb110dbe25c6add72298bd7ab7bd.jpg">Add</a>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <center>
+            <p>&copy; 2025 YourWebsite. All rights reserved.</p>
+        </center>
+    </footer>
+
+<script>
+document.querySelectorAll('.add-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.getAttribute('data-name');
+        const price = parseFloat(button.getAttribute('data-price'));
+        const image = button.getAttribute('data-img');
+
+        let cart = JSON.parse(localStorage.getItem('cart')) ;
+
+        cart.push({ name, price, image });
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+        window.location.href = 'cart.html';
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="login.css">
+     <script type="text/javascript">
+    function validate(form) {
+        var username = form.username.value.trim(); // first input
+        var email = form.email.value.trim();
+        var contact = form.contactnumber.value.trim();
+        var password = form.password.value;
+
+        // Patterns
+        var usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,14}$/;
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var mobilePattern = /^[6-9]\d{9}$/;
+        var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{6,12}$/;
+
+        if (!usernamePattern.test(username)) {
+            alert("Username must start with a letter and be 3–15 characters long. Only letters, digits, and underscore allowed.");
+            return false;
+        }
+
+        if (email.length === 0 || !emailPattern.test(email)) {
+            alert("You must enter a valid email id");
+            return false;
+        }
+
+        if (!mobilePattern.test(contact)) {
+            alert("Enter a valid 10-digit mobile number starting with 6/7/8/9");
+            return false;
+        }
+
+        if (password.length === 0 || !passwordPattern.test(password)) {
+            alert("Password must be 6–12 characters and include uppercase, lowercase, digit, and special character.");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="link">home</a>
+        <a href="order.html" class="link">menu</a>
+        <a href="aboutus.html" class="link">about us</a>
+        <a href="help.html" class="link">help</a>
+   </nav>
+  
+  <center>
+    <table>
+            <tr>
+            <td>
+                <img src="https://i.pinimg.com/236x/38/09/40/3809406939978db5904afdbcf62bf819.jpg">
+            </td>
+            <td>
+   <div id="registration">
+        <h2>
+            Sign in to Testnest
+        </h2>
+     <form method="post" action="login.php" onsubmit="return validate(this)">
+    <!-- Hidden action field -->
+    <input type="hidden" name="action" value="register">
+
+    <input type="text" placeholder="Enter user name" name="username"required>
+    <br><br>
+    <input type="email" placeholder="Enter your email id" name="email" required>
+    <br><br>
+    <input type="text" placeholder="Enter your contact number" name="contactnumber" required>
+    <br><br>
+    <input type="password" placeholder="Password" name="password" required>
+    <br><br>
+    <input type="submit" value="Register" class="button">
+</form>
+    </div>
+            </td>
+            </tr>
+      <table>
+    </center>
+    <br><br>
+    <footer>
+    <center>
+       <p>&copy; 2025 YourWebsite. All rights reserved.</p>
+    </center>
+</footer>
+</body>
+</html>

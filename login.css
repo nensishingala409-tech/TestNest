@@ -1,0 +1,74 @@
+
+nav,.link{
+  background-color: rgb(78, 52, 46) ; 
+  color: white;
+  border-radius: 6px;
+  text-align: right;
+  padding: 15px 20px;
+  gap: 50px; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  margin-right:20px ;
+  position: static;
+  top:10px;
+  font-size: 17px;
+}
+a:hover {
+  background-color:  rgb(154, 147, 145); 
+}
+h1,h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50px;
+    color:#4e342e;
+}
+
+#login,#registration{
+    background-color: #a49b99;
+}
+div{
+    height:450px;
+    width:360px;
+    border:2px solid;
+    margin-bottom: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    font-size: 15px;
+}
+input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.button{
+    background-color:  rgb(78, 52, 46);
+    font-size: larger;
+    color:white;
+}
+img{
+    height:450px;
+    width:360px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+footer{
+    
+  height: 70px;
+  padding-top: 10px;
+  background-color: #4e342e; 
+  color: white;
+}
+
+body{
+  background-color: #dfdbda;
+}
+
+#forgetpassword{
+    height: 250px;
+    width: 360px;
+    margin-top: 140px;
+    margin-bottom: 140px;
+}

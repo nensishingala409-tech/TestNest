@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f6f5;
+  color: #2a1b18;
+}
+
+.nav {
+  background-color: #4e322c;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav .link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.cart-container h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.cart-item img {
+  border-radius: 12px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-details h3 {
+  margin: 0 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.customize-section h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.custom-options {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.custom-option {
+  text-align: center;
+}
+
+.custom-option img {
+  border: 2px solid #4e322c;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.custom-option p {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #4e322c;
+}
+
+.custom-option button {
+  margin: 3px;
+  background-color: #4e322c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.cart-total h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.checkout-btn {
+  background-color: #4e322c;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color:white;
+}
+
+footer {
+  background-color: #4e322c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  color: white;
+}

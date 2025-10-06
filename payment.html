@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>payment</title>
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Order</h1>
+    <nav>
+      <a href="order.html" id="back"align="right">← Back to Menu</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Your Details</h2>
+      <div class="form-group">
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Middle Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="Address" />
+        <input type="text" placeholder="Mobile Number" />
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Order Details</h2>
+      <p>Dish: Pizza</p>
+      <p>Price:₹250</p>
+      <input type="text" placeholder="Quantity" />
+    </section>
+
+    <section class="card">
+      <h2>Payment Options</h2>
+      <label><input type="radio" name="payment" /> UPI</label>
+      <label><input type="radio" name="payment" /> Cash on Delivery</label>
+     <input type="button"value="payment"class="payment">
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 YourWebsite. All rights reserved.</p>
+  </footer>
+</body>
+</html>

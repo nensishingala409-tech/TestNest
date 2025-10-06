@@ -1,0 +1,126 @@
+[
+  {
+    "category": "Pizza",
+    "items": [
+      {
+        "name": "Margherita (Regular) Pizza",
+        "price": 199,
+        "img": "https://cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg"
+      },
+      {
+        "name": "Farmhouse Pizza",
+        "price": 299,
+        "img": "https://www.dominos.co.in/great-deals/online-pizza-coupons/images/story_images/evd/pizza-4.jpg"
+      },
+      {
+        "name": "Veggie Supreme Pizza",
+        "price": 399,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaLabHCgyK_q1WcBUU_vGfEIZnPj_6lJ9-Ig&s"
+      }
+    ]
+  },
+
+  {
+    "category": "Burger",
+    "items": [
+      {
+        "name": "Classic Veg Burger",
+        "price": 99,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ReUYcgEQQ5ds5eKSysf3B-3zHfWk79A7MA&s"
+      },
+      {
+        "name": "Cheese Burst Burger",
+        "price": 129,
+        "img": "https://cdn.uengage.io/uploads/6670/image-557382-1677054193.jpeg"
+      },
+      {
+        "name": "Paneer Tikka Burger",
+        "price": 149,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRclmC0jxLa7DRHXZODCfZUdBEtUH9ZiCeZSg&s"
+      }
+    ]
+  },
+
+  {
+    "category": "Sizzler",
+    "items": [
+      {
+        "name": "Crunchy Paneer Sizzler",
+        "price": 299,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPFdbKU4GKWEx7E8ibu74Gf5_4hHeyt80YQ&s"
+      },
+      {
+        "name": "Tasty Special Sizzler",
+        "price": 399,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPyNzTQWgDCa1ydXl0ctOgjUFKunrDD46GTw&s"
+      },
+      {
+        "name": "Maxican Platter Sizzler",
+        "price": 499,
+        "img": "https://b.zmtcdn.com/data/dish_photos/578/d0dc283ce184c577f0d95477e62f4578.jpeg?fit=around|130:130&crop=130:130;*,*"
+      }
+    ]
+  },
+
+  {
+    "category": "Fries & Nachos",
+    "items": [
+      {
+        "name": "French Fries (Regular)",
+        "price": 99,
+        "img": "https://rukminim2.flixcart.com/image/850/1000/xif0q/snack-savourie/x/u/v/fresh-live-potato-finger-chips-i-french-fries-low-fat-chips-i-no-original-imaghqe72vzjp4zb.jpeg?q=90&crop=false"
+      },
+      {
+        "name": "Peri-Peri Fries",
+        "price": 119,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcAAqevped9jP7qd8rEYKxWiX8-PriUAfVT1L2I76nNxB6q5m0lrb0ng9y3dk3q8rTxw&usqp=CAU"
+      },
+      {
+        "name": "Cheesy Nachos",
+        "price": 499,
+        "img": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/nacho_cheese_sauce_55011_16x9.jpg"
+      }
+    ]
+  },
+
+  {
+    "category": "Beverages & Dessert",
+    "items": [
+      {
+        "name": "Mojito",
+        "price": 199,
+        "img": "https://muriellebanackissa.com/wp-content/uploads/2022/09/Cherry-Mojito-42-scaled.jpg?ver=1.2.2"
+      },
+      {
+        "name": "Coffee",
+        "price": 299,
+        "img": "https://khana.behindtalkies.com/wp-content/uploads/sites/13/2023/02/pexels-photo-312418.jpeg"
+      },
+      {
+        "name": "Oreo Ice-Cream",
+        "price": 199,
+        "img": "https://britneybreaksbread.com/wp-content/uploads/2023/06/oreo-ice-cream.jpg"
+      },
+      {
+        "name": "Oreo Cup Cake",
+        "price": 199,
+        "img": "https://i.pinimg.com/736x/79/e4/8b/79e48b3a2fa426a9a2b38bc45825f076.jpg"
+      },
+      {
+        "name": "Cold Coffee",
+        "price": 159,
+        "img": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/cold-coffee-recipe-1.jpg"
+      },
+      {
+        "name": "Chocolate Ice-Cream",
+        "price": 399,
+        "img": "https://i.pinimg.com/originals/29/b5/98/29b5988314abc1f743a102f3456ee730.jpg"
+      },
+      {
+        "name": "Pineapple Pastry",
+        "price": 149,
+        "img": "https://i.pinimg.com/736x/75/1b/eb/751beb110dbe25c6add72298bd7ab7bd.jpg"
+      }
+    ]
+  }
+]

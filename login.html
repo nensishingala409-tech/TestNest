@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript">
+    function validate(form) {
+        var email = form.email.value.trim();
+        var password = form.password.value;
+
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{6,12}$/;
+
+        if (email.length === 0) {
+            alert("You must enter an email id");
+            return false;
+        }
+
+        if (!emailPattern.test(email)) {
+            alert("You must enter a valid email id");
+            return false;
+        }
+
+        if (password.length === 0) {
+            alert("You must enter a password");
+            return false;
+        }
+
+        if (!passwordPattern.test(password)) {
+            alert("Password must be 6–12 characters and include uppercase, lowercase, digit, and special character.");
+            return false;
+        }
+
+        return true;
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="link">Home</a>
+        <a href="order.php" class="link">Menu</a>
+        <a href="aboutus.html" class="link">About Us</a>
+        <a href="help.html" class="link">Help</a>
+    </nav>
+
+    <main>
+        <center>
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://i.pinimg.com/236x/38/09/40/3809406939978db5904afdbcf62bf819.jpg" alt="Food image">
+                    </td>
+                    <td>
+                        <div id="login">
+                            <h2>Login for Tasty Food</h2>
+                            <form method="POST" action="login.php" onsubmit="return validate(this)">
+                                <!-- Hidden action field -->
+                                <input type="hidden" name="action" value="login">
+
+                                <input type="text" placeholder="Enter your email id" name="email" required>
+                                <br><br>
+                                <input type="password" placeholder="Password" name="password" required>
+                                <br><br>
+                                
+                                    <input type="checkbox" name="remember"id="remember-me"padding =10px> Remember Me
+
+                                <br><br>
+
+                                <input type="submit" value="Login" class="button">
+                                <br><br>
+
+                                <a href="registration.html">Registration</a><br><br>
+                                <a href="forgotpassword.html">Forgot password</a>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </main>
+
+    <br><br><br>
+    <footer>
+        <center>
+            <p>&copy; 2025 YourWebsite. All rights reserved.</p>
+        </center>
+    </footer>
+</body>
+</html>

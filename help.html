@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+
+    <a href="index.html">home</a>&nbsp;&nbsp;&nbsp;
+    <br><br>
+    <input type="text" placeholder="search for help">
+
+    <h3>🛒 Ordering and menu</h3>
+    <ol>
+        <li>How can I place an order on Testnest</li>
+        <p>You can browse the menu, select your favorite items, customize them if needed, and click “Add to Cart.” Once you’re ready, go to your cart and click “Place Order” to proceed.</p>
+
+        <li>Can I customize my food order (e.g., remove onions or make it spicy)?</li>
+        <p>Yes! Most dishes have a customization option where you can add special requests like "no onions" or "extra spicy" before adding to the cart.</p>
+
+        <li>How do I know which items are vegetarian or gluten-free?</li>
+        <p>Each item has icons or labels indicating if it's vegetarian, vegan, or gluten-free. You can also filter the menu based on dietary preferences.</p>
+
+        <li>Is there a minimum order value for delivery?</li>
+        <p>Yes, depending on your location and the restaurant, a minimum order value may apply. It will be shown at checkout if applicable.</p>
+
+        <li>Can I schedule an order for later?</li>
+        <p>Yes, you can schedule your order in advance by selecting a delivery time slot before placing the order.</p>
+
+        <li>Can I reorder a previous order?</li>
+        <p>Yes, you can view your order history and select “Reorder” for any previous item, if it’s still available.</p>
+
+        <li>Do you offer contactless delivery?</li>
+        <p>Yes, you can choose contactless delivery at checkout. The delivery partner will leave the order at your doorstep.</p>
+
+        <li>How do I track my order in real time?</li>
+        <p>After placing an order, you’ll see a live tracker with updates about preparation, pickup, and delivery.</p>
+
+        <li>Can I cancel my order after placing it?</li>
+        <p>You can cancel your order within a short window after placing it. Once preparation starts, cancellation may not be possible.</p>
+
+        <li>Are there combo deals or meal offers?</li>
+        <p>Yes! Check the “Deals” or “Offers” section for available combos and discounts on meals.</p>
+    </ol>
+
+    <h3>💳 Payments</h3>
+    <ol>
+        <li>What payment methods are accepted on TestNest?</li>
+        <p>We accept UPI, debit/credit cards, net banking, digital wallets, and cash on delivery (where available).</p>
+
+        <li>Is online payment safe on your platform?</li>
+        <p>Absolutely. All payments are securely processed through encrypted gateways that follow strict safety protocols.</p>
+
+        <li>Can I pay with cash on delivery?</li>
+        <p>Yes, cash on delivery is available for most orders unless the restaurant or location doesn't support it.</p>
+
+        <li>I was charged but my order didn’t go through — what should I do?</li>
+        <p>Don’t worry! If your payment was deducted but the order wasn’t confirmed, the amount will be automatically refunded within 3–5 business days.</p>
+
+        <li>How can I apply discount coupons or promo codes?</li>
+        <p>You can enter your coupon code at the checkout page before making the payment. Valid discounts will be applied instantly.</p>
+
+        <li>Can I save my card details for faster checkout?</li>
+        <p>Yes, you can securely save your card details using our encrypted payment gateway for quicker future payments.</p>
+
+        <li>Are there extra charges for digital payments?</li>
+        <p>No, we do not charge extra for using digital payment methods. However, your bank or wallet provider may apply their own fees.</p>
+
+        <li>How do I get an invoice for my order?</li>
+        <p>Invoices are automatically emailed to you after successful delivery. You can also download them from your order history.</p>
+
+        <li>What should I do if a payment fails?</li>
+        <p>If a payment fails, please try again. If money is deducted, it will be refunded automatically within 3–5 business days.</p>
+
+        <li>Can I split the payment across two methods?</li>
+        <p>Currently, we support one payment method per order. You can switch between available methods before finalizing payment.</p>
+    </ol>
+
+    <h3>📦 Delivery & Tracking</h3>
+    <ol>
+        <li>How long does delivery usually take?</li>
+        <p>Delivery time depends on your location and the restaurant’s prep time. Estimated delivery time will be shown before you confirm your order.</p>
+
+        <li>Can I track the delivery driver in real time?</li>
+        <p>Yes, after your order is picked up, you can view the live location of the delivery partner on the map via the tracker.</p>
+
+        <li>What should I do if my order is late?</li>
+        <p>If your order is delayed, you’ll receive updates in the tracker. You can also contact support directly through the Help section.</p>
+
+        <li>What happens if I miss the delivery?</li>
+        <p>The delivery partner will attempt to contact you. If unreachable, the order may be canceled and you may not be eligible for a refund.</p>
+
+        <li>Can I change my delivery address after placing the order?</li>
+        <p>Once an order is placed, the delivery address cannot be changed. Please double-check your address before confirming the order.</p>
+    </ol>
+
+    <footer>
+        <center>
+            <p>&copy; 2025 YourWebsite. All rights reserved.</p>
+        </center>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const questions = document.querySelectorAll("ol li");
+        questions.forEach(function(question) {
+            question.style.cursor = "pointer";
+            let answer = question.nextElementSibling;
+            if (answer && answer.tagName === "P") {
+                answer.classList.remove("visible");
+
+                question.addEventListener("click", function() {
+                    const isVisible = answer.classList.contains("visible");
+
+                    document.querySelectorAll("ol p.visible").forEach(p => {
+                        p.classList.remove("visible");
+                        if (p.previousElementSibling) {
+                            p.previousElementSibling.classList.remove("active");
+                        }
+                    });
+
+                    if (!isVisible) {
+                        answer.classList.add("visible");
+                        question.classList.add("active");
+                    } else {
+                        answer.classList.remove("visible");
+                        question.classList.remove("active");
+                    }
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
